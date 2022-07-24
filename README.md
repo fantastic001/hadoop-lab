@@ -20,3 +20,9 @@ Word index
     
     ./start-container.sh
     HADOOP_CLASSPATH=/code/target/hlab-1.0-SNAPSHOT.jar hadoop xyz.fantastixus.hadoop_lab.word_index.WIApp text.txt output
+
+Tweet distance
+
+    ./start-container.sh 
+    echo -e "mytweet\nymtweet\nhaha" > tweets.txt 
+     HADOOP_CLASSPATH=/code/target/hlab-1.0-SNAPSHOT.jar hadoop xyz.fantastixus.hadoop_lab.tweet_distance.TDApp tweets.txt output "mytweet"
